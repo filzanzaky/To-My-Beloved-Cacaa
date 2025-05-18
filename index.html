@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Permintaan Maaf</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #00ff88;
+      font-family: monospace;
+      padding: 20px;
+      white-space: pre-wrap;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal"></div>
+
+  <script>
+    const lines = [
+      ">>> Menjalankan program permintaan maaf...\n",
+      ">>> Memuat memori dan perasaan...\n",
+      ">>> Mengakses kata-kata yang sulit diucapkan...\n",
+      "\nHaiiii Sayaaaangkuu",
+      "Disini aku mauu mintaa maaf babyyy samaa kamuu.",
+      "Aku sadar... mungkin aku terlalu egois meminta kamu banyak hal tanpa aku sadarin sebenernyaa kamuu udah kasih dan korbanin banyaak hal buat akuu",
+      "Dan karnaa itu, aku benar-benar minta maaf ya sayaaang.",
+      "Aku gak mau semua nyaa berakhir karna aku kurang bisa ngertiin kamu sayaang.",
+      "Aku izin mau perbaiki semuanya sayaang dengan pelan pelan.",
+      "Kalau kamu bersedia, bolehkah yaa aku tetap selaluu ada di sisi kamuu ?",
+ "I Love Youu Sayaang Kuuu",
+      "\n>>> -- Selesai --"
+    ];
+
+    let i = 0;
+    function printLine() {
+      if (i < lines.length) {
+        document.getElementById("terminal").innerHTML += lines[i] + "\n";
+        i++;
+        setTimeout(printLine, 1200);
+      }
+    }
+
+    printLine();
+  </script>
+</body>
+</html>
